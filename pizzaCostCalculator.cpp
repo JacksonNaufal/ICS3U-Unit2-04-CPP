@@ -3,8 +3,6 @@
 // Created On March 2022
 // This is a "Pizza calculator using Inches" program with proper style"
 
-
-
 #include <iostream>
 #include <iomanip>
 
@@ -16,21 +14,19 @@ int main() {
     const float RENT = 1;
     const float HST = 1.13;
 
-    float diameter
+    float diameter;
     float cost;
     float total;
-
 
     // input
     std::cout << "If your pizza has the Diameter of (Inch): ";
     std::cin >> diameter;
+    
     // process
-
     cost = RENT + LABOUR + (COST_PER_INCH * diameter);
     total = cost * HST;
 
     // output
-
     std::cout << "\nThe Final Cost is: $" <<  std::fixed
     << std::setprecision(2)  << std::setfill('0') << total << std::endl;
     std::cout << std::endl;
