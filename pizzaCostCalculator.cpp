@@ -21,7 +21,7 @@ int main() {
     // input
     std::cout << "If your pizza has the Diameter of (Inch): ";
     std::cin >> diameter;
-    
+
     // process
     cost = RENT + LABOUR + (COST_PER_INCH * diameter);
     total = cost * HST;
